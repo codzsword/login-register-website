@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!------- Header Begins --------->
+    <header>
+        <div class="portfolio-container">
+            <div class="portfolio-row header-wrap">
+                <div class="brand-name">
+                    <a href="#" class="logo">Jane Doe</a>
+                </div>
+                <!------- Header Navigation Begins --------->
+                <div class="portfolio-navbar">
+
+
+
+
+                </div>
+                <!------- Header Navigation Ends --------->
+
+
+
+
+                <button type="button" class="login-btn" onclick="showLogin()">
+                    Login
+                </button>
+            </div>
+        </div>
+    </header>
+    <!------- Header Ends --------->
+    <!-- Login Modal Begins -->
+    <div class="modal modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <a href="#" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="modal-body">
+                <div class="login-form">
+                    <form action="#">
+                        <label for="Email" class="input-label">Email Address *</label>
+                        <div class="input-wrapper">
+                            <span class="addon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <label for="password" class="input-label">Password *</label>
+                        <div class="input-wrapper">
+                            <span class="addon">
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <input type="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <div class="form-element">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">Keep me logged in</label>
+                            </div>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <div class="sign-in">
+                            <button class="btn-submit">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                        Don't have an account?
+                        <a href="#" onclick="showRegister()">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal Ends -->
+    <!-- Register Modal Begins -->
+    <div class="modal modal-register">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+                <a href="#" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="modal-body">
+                <div class="register-form">
+                    <form action="#">
+                        <label for="Name" class="input-label">Full Name *</label>
+                        <div class="input-wrapper">
+                            <span class="addon">
+                                <i class="fa-regular fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <label for="Email" class="input-label">Email Address *</label>
+                        <div class="input-wrapper">
+                            <span class="addon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <label for="password" class="input-label">Password *</label>
+                        <div class="input-wrapper">
+                            <span class="addon">
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <input type="password" class="form-control" placeholder="Enter your password">
+                        </div>
+                        <div class="form-element">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">Keep me logged in</label>
+                            </div>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <div class="sign-in">
+                            <button class="btn-submit">
+                                Register
+                            </button>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                        Already have account?
+                        <a href="#" onclick="showLogin()">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal Ends -->
+    <!-- Footer Begins -->
+    <footer>
+        <div class="portfolio-container">
+            Already have account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+    <script src="script.js"></script>
+</body>
+
+</html>

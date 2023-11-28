@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* -----Root CSS Variable------ */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----CSS Global----- */
+
+a {
+    text-decoration: none;
+    color: #346ab8;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #FFF;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* -----Wrapper------- */
+
+.portfolio-container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.portfolio-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* -----Style for Header Navbar------ */
+
+
+
+
+/* -----Navbar for mobile view only----- */
+
+
+
+/* ----- Style for Modal Content ------- */
+
+
+
+/* -------- Login Form ------- */
+
+.input-label {
+    font-weight: 600;
+    margin-bottom: .5rem;
+    display: block;
+    color: #FFF;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: #F9F6F610;
+}
+
+.addon {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.form-control {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 12px;
+    color: #FFF;
+    flex: 1 1 auto;
+    background-color: hsla(0, 20%, 97%, 0.031);
+    border-left: 3px solid #F9F6F660;
+    width: 1%;
+}
+
+.form-control:focus-visible {
+    outline: none;
+}
+
+.form-element {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+    color: #FFF;
+    margin: 10px 0;
+}
+
+.form-element .checkbox label {
+    color: #FFF;
+}
+
+/* ============== Submit button ============== */
+
+
+
+/* ======= Medium devices (tablets, 768px and up) */
+
+@media (min-width:768px) {
+
+    header {
+        padding: 10px 15px;
+    }
+
+    .navbar-toggle i {
+        display: none;
+    }
+
+    .portfolio-navbar {
+        display: block;
+    }
+
+    .portfolio-navbar ul li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .portfolio-navbar ul li a {
+        color: #FFF;
+        line-height: 65px;
+    }
+
+}
